@@ -1,26 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:layout_height = "match_parent"
+    tools:context = ".MainActivity"
     android:background="@drawable/bg" >
-
-    <ImageView
-        android:id="@+id/Logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints,ImageContrastCheck"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:srcCompat="@tools:sample/avatars" />
 
     <EditText
         android:id="@+id/Username"
         android:layout_width="363dp"
         android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="245dp"
         android:drawableLeft="@drawable/baseline_person_24"
         android:hint=" Enter your Username"
         android:textColor="@color/white"
@@ -30,10 +24,28 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="165dp" />
 
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="142dp"
+        tools:ignore="MissingConstraints,ImageContrastCheck"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
     <EditText
         android:id="@+id/Password"
         android:layout_width="363dp"
         android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="311dp"
+        android:autofillHints=""
         android:drawableLeft="@drawable/baseline_lock_24"
         android:hint=" Enter your Password"
         android:textColor="@color/white"
@@ -41,13 +53,16 @@
         android:textStyle="bold"
         tools:ignore="MissingConstraints,TextFields"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="245dp"
-        android:autofillHints="" />
+        tools:layout_editor_absoluteY="245dp" />
 
     <Button
         android:id="@+id/Login"
         android:layout_width="149dp"
         android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="286dp"
         android:onClick="login"
         android:text="login"
         android:textSize="25sp"
@@ -59,6 +74,10 @@
         android:id="@+id/Reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="363dp"
+        android:layout_marginEnd="29dp"
         android:text="reset password "
         android:textColor="@color/white"
         tools:ignore="MissingConstraints"
@@ -69,6 +88,10 @@
         android:id="@+id/SignIn"
         android:layout_width="141dp"
         android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="462dp"
         android:text="or sign in using "
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -80,6 +103,9 @@
         android:id="@+id/Google"
         android:layout_width="35dp"
         android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="167dp"
         android:src="@drawable/google"
         tools:ignore="MissingConstraints,ImageContrastCheck"
         tools:layout_editor_absoluteX="188dp"
@@ -89,6 +115,10 @@
         android:id="@+id/da"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="670dp"
         android:text="don't have an account?"
         android:textColor="@color/white"
         tools:ignore="MissingConstraints"
@@ -99,10 +129,14 @@
         android:id="@+id/Su"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="224dp"
+        android:layout_marginBottom="42dp"
         android:text="Sign Up"
         android:textColor="@color/white"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="232dp"
         tools:layout_editor_absoluteY="605dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

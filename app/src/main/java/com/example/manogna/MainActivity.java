@@ -1,14 +1,16 @@
 package com.example.manogna;
 
-        import androidx.appcompat.app.AppCompatActivity;
-        import android.annotation.SuppressLint;
-        import android.widget.Button;
-        import android.widget.EditText;
-        import android.widget.ImageView;
-        import android.widget.TextView;
-        import android.view.View;
-        import android.widget.Toast;
-        import android.os.Bundle;
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     Button b1;
@@ -44,5 +46,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-    }
+        tx2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, Layout2.class);
+                MainActivity.this.startActivity(i);
+            }
+        });
+    ;}
 }

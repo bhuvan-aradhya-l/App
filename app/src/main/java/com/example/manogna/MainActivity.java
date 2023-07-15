@@ -40,16 +40,13 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email =ed1.getText().toString();
-                String password = ed2.getText().toString();
                 if (ed1.getText().toString().equals("admin") &&
                         ed2.getText().toString().equals("admin")) {
                     Toast.makeText(getApplicationContext(),
                             "Redirecting...", Toast.LENGTH_SHORT).show();
-                } else  {
+                } else {
                     Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
         tx2.setOnClickListener(new View.OnClickListener() {
@@ -58,5 +55,14 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(i);
             }
         });
-    ;}
+
+                tx1.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        Intent i5 = new Intent(MainActivity.this, Layout4.class);
+                        MainActivity.this.startActivity(i5);
+                    }
+                });
+
+    }
+
 }

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "216894606225",
+    "project_id": "manogna-34e12",
+    "storage_bucket": "manogna-34e12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216894606225:android:b95b2ee7b04cc8b2cb2830",
+        "android_client_info": {
+          "package_name": "com.example.manogna"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216894606225-afoia17u6nhqjgd7vdone919h2p3o094.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9i7hg_bHWLnEUgIJc-eEFbME-ZbR-4Nw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216894606225-afoia17u6nhqjgd7vdone919h2p3o094.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -12,10 +12,13 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity {
     Button b1;
     EditText ed1,ed2;
     TextView tx1,tx2,tx3,tx4;
+    private FirebaseAuth auth;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -37,13 +40,16 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String email =ed1.getText().toString();
+                String password = ed2.getText().toString();
                 if (ed1.getText().toString().equals("admin") &&
                         ed2.getText().toString().equals("admin")) {
                     Toast.makeText(getApplicationContext(),
                             "Redirecting...", Toast.LENGTH_SHORT).show();
-                } else {
+                } else  {
                     Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_SHORT).show();
                 }
+
             }
         });
         tx2.setOnClickListener(new View.OnClickListener() {

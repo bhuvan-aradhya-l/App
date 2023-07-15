@@ -15,13 +15,13 @@ public class Layout2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout2);
-            b2 = (Button)findViewById(R.id.button4);
+        b2 = (Button)findViewById(R.id.button4);
 
-     b2.setOnClickListener(new View.OnClickListener() {
-        public void onClick(View v) {
-            Intent i2 = new Intent(Layout2.this,Layout3.class);
-            Layout2.this.startActivity(i2);
-        }
-    });
-  }
+        b2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i2 = new Intent(Layout2.this,Layout3.class);
+                Layout2.this.startActivity(i2);
+            }
+        });
+    }
 }

@@ -82,6 +82,7 @@
         android:onClick="Reset"
         android:text="reset password "
         android:textColor="@color/white"
+        android:textSize="48px"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="155dp"
         tools:layout_editor_absoluteY="397dp" />
